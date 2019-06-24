@@ -5,6 +5,7 @@
     "require": {
         "cache/cache": "^1.0"
     },
+    "license": "GPL-3.0-or-later",
     "autoload": {
         "psr-4": {
           "Vesica\\Cacher\\": "src/"
