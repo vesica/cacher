@@ -1,0 +1,37 @@
+version: 2.1
+
+jobs:
+  test:
+    docker:
+    # specify the version you desire here
+    - image: quay.io/vesica/php72
+    # Memcached container
+    - image: memcached:1.5
+    - image: redis:5
+    working_directory: ~/repo
+    steps:
+    - checkout
+    # Download and cache dependencies
+    - restore_cache:
+        keys:
+        - v1-dependencies-{{ checksum "composer.json" }}
+        # fallback to using the latest cache if no exact match is found
+        - v1-dependencies-
+    - run: composer install -n --prefer-dist
+    - save_cache:
+        paths:
+        - ./vendor
+        key: v1-dependencies-{{ checksum "composer.json" }}
+    # run tests!
+    - run: vendor/bin/phpunit tests/
+
+workflows:
+  version: 2
+  build-master:
+    jobs:
+      - test:
+          filters:
+            branches:
+              only: master
+            tags:
+              ignore: /.*/

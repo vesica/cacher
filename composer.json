@@ -1,0 +1,18 @@
+{
+    "require": {
+        "cache/cache": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "Vesica\\Cacher\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "Vesica\\Cacher\\Tests\\": "tests/"
+        }
+      },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    }
+}
