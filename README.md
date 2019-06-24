@@ -2,6 +2,8 @@
 
 This is wrapper around the PHP cache/cache library (https://github.com/php-cache/cache) to simplify caching with just 2 lines.
 
+This was originally written inside https://github.com/islamic-network/waf but is now used in various projects.
+
 ## Install it
 
 ```composer require vesica/cacher```
