@@ -1,4 +1,7 @@
 {
+    "name": "vesica/cacher",
+    "type": "library",
+    "description": "A simplified caching library built on top of php-cache",
     "require": {
         "cache/cache": "^1.0"
     },
