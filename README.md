@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/vesica/cacher.svg?style=svg)](https://circleci.com/gh/vesica/cacher)
+
 # Caching Made Easy
 
 This is wrapper around the PHP cache/cache library (https://github.com/php-cache/cache) to simplify caching with just 2 lines.
