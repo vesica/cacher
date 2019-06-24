@@ -11,6 +11,7 @@ This was originally written inside https://github.com/islamic-network/waf but is
 ```composer require vesica/cacher```
 
 ## Use it with Redis or Memcached
+```
 $cache = new \Vesica\Cacher\Redis($host, $port, $namespace);
 // OR
 $cache = new \Vesica\Cacher\Memcached($host, $port, $namespace);
@@ -18,3 +19,4 @@ $cache = new \Vesica\Cacher\Memcached($host, $port, $namespace);
 $cache->set($key, $value);
 $cache->get($key);
 $cache->exists($key);
+```
