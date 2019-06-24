@@ -8,11 +8,6 @@ use Vesica\Cacher\Cacher;
 class Redis extends Cacher
 {
     /**
-     * Namespaced cached pool object
-     * @var Object
-     */
-    private $cache;
-    /**
      * Memcached constructor.
      * @param $host
      * @param $port
