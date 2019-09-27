@@ -1,4 +1,10 @@
-[![CircleCI](https://circleci.com/gh/vesica/cacher.svg?style=svg)](https://circleci.com/gh/vesica/cacher)
+[![CircleCI](https://circleci.com/gh/vesica/cacher.svg?style=shield)](https://circleci.com/gh/vesica/cacher)
+[![Latest Stable Version](https://poser.pugx.org/vesica/cacher/v/stable)](https://packagist.org/packages/vesica/cacher)
+[![Total Downloads](https://poser.pugx.org/vesica/cacher/downloads)](https://packagist.org/packages/vesica/cacher)
+[![License](https://poser.pugx.org/vesica/cacher/license)](https://packagist.org/packages/vesica/cacher)
+[![Monthly Downloads](https://poser.pugx.org/vesica/cacher/d/monthly)](https://packagist.org/packages/vesica/cacher)
+[![Daily Downloads](https://poser.pugx.org/vesica/cacher/d/daily)](https://packagist.org/packages/vesica/cacher)
+[![composer.lock](https://poser.pugx.org/vesica/cacher/composerlock)](https://packagist.org/packages/vesica/cacher)
 
 # Caching Made Easy
 
