@@ -3,7 +3,7 @@ namespace Vesica\Cacher;
 
 use Cache\Namespaced\NamespacedCachePool;
 use Cache\Adapter\Redis\RedisCachePool;
-use Vesica\Cacher\Cacher;
+use Exception;
 
 class Redis extends Cacher
 {

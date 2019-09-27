@@ -3,7 +3,7 @@ namespace Vesica\Cacher;
 
 use Cache\Namespaced\NamespacedCachePool;
 use Cache\Adapter\Memcached\MemcachedCachePool;
-use Vesica\Cacher\Cacher;
+use Exception;
 
 class Memcached extends Cacher
 {
