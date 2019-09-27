@@ -20,7 +20,7 @@ class Redis extends Cacher
             $redis->connect($host, $port);
             $this->cache = new NamespacedCachePool(new RedisCachePool($redis), self::NAMESPACE . $nameSpaceExtension);
         } catch (Exception $e) {
-            throw new Exception('Unable to Connect to Memcached', $e->getMessage());
+            throw new Exception('Unable to Connect to Redis: ' . $e->getMessage());
         }
     }
 }

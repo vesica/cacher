@@ -20,7 +20,7 @@ class Memcached extends Cacher
             $memCached->addServer($host, $port);
             $this->cache = new NamespacedCachePool(new MemcachedCachePool($memCached), self::NAMESPACE . $nameSpaceExtension);
         } catch (Exception $e) {
-            throw new Exception('Unable to Connect to Memcached', $e->getMessage());
+            throw new Exception('Unable to Connect to Memcached: ' .  $e->getMessage());
         }
     }
 }
