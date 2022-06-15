@@ -1,3 +1,7 @@
+# Deprecation Notice - June 2022
+
+As the underlying PHP Cache library is now deprecated in favour of Symfony Cache (https://symfony.com/doc/current/components/cache.html), this library is no longer supported. Symfony cache simplifies a lot of the complexity much like this library did, and there's no good reason to maintain another one.
+
 [![CircleCI](https://circleci.com/gh/vesica/cacher.svg?style=shield)](https://circleci.com/gh/vesica/cacher)
 [![Latest Stable Version](https://poser.pugx.org/vesica/cacher/v/stable)](https://packagist.org/packages/vesica/cacher)
 [![Total Downloads](https://poser.pugx.org/vesica/cacher/downloads)](https://packagist.org/packages/vesica/cacher)
